@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+#all {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	max-width: 1200px;
+	margin :auto;
+
+}
+
+#left {
+	padding: 10px;
+	background-color: black;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-right: 1px solid gray;
+}
+
+#middle {
+	background-color: black;
+	flex: 1; 
+	border-right: 1px solid gray;
+	max-width: 600px;
+}
+
+#right {
+	background-color: black;
+	flex: 1; 
+	display: flex;
+	border-left: 1px solid gray;
+}
+
+.icons {
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.duos {
+	font-size: 20px;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+#tweet-button-container {
+	display: flex;
+	justify-content: center;
+}
+#tweet-button {
+	cursor: pointer;
+
+	font-size: 20px;
+	background-color: #1DA1F2;
+	color: white;
+	border-radius: 30px;
+	border: none;
+	width :250px;
+	height: 50px;
+}
+#logo {
+	font-size: 30px;
+}
+#head {
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+#home {
+	padding: 10px;
+	font-size: 20px;
+}
+#ff-containter {
+	display: flex;
+	border-bottom: 1px solid gray;
+
+}
+.ff {
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+	font-size: 15px;
+	width: 240px;
+	text-align: center;
+}
+
+#for-you {
+	color: gray;
+}
+#tweets-container {
+	display: flex;
+	flex-direction: column;
+}
+.tweet {
+	color: white;
+	display: flex;
+	border-bottom: 1px solid gray;
+
+}
+#tweet-profile-pic {
+	padding: 10px;
+}
+#icon-pic {
+	max-width: 40px;
+	border-radius: 100%;
+}
+.tweet-pic {
+	margin-top: 10px;
+	max-width: 500px;
+	border-radius: 5%;
+}
+#tweet-details {
+	padding: 10px;
+}
+#user-details-container {
+	display: flex;
+	color: gray;
+	padding-bottom: 5px;
+}
+.user-name{
+	 color: white;
+	margin-right: 5px;
+}
+.user-details {
+	padding: 1px;
+}
+#quote {
+	font-size: 15px;
+	max-width: 500px;
+}
+.tweet-stats {
+	display: flex;
+	justify-content: space-between;
+}
+.interactions {
+	display: flex;
+	color: gray;
+	padding: 10px;
+}
+.sub-interaction {
+	display: flex;
+	padding: 4px;
+	font-size: 15px;
+
+}

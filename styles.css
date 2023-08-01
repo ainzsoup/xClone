@@ -1,16 +1,26 @@
-body {
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+}
+html {
+	background-color: black;
+
+	background-color: white;
+	height: 100%;
+}
+body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	color: white;
+	font-size: 16px;
+	color: rgb(231, 233, 234);
+	height: 100%;
 }
 #all {
 	display: flex;
-	height: 100vh;
 	justify-content: center;
 	max-width: 1200px;
 	margin :auto;
-
 }
 
 #left {
@@ -18,24 +28,16 @@ body {
 	background-color: black;
 	flex-direction: column;
 	justify-content: space-evenly;
-	border-right: 1px solid gray;
 }
 
 #middle {
 	background-color: black;
-	flex: 1; 
-	border-right: 1px solid gray;
-	max-width: 600px;
+	border-right: 1px solid #2f3336;
+	border-left: 1px solid #2f3336;
 }
 
-#right {
-	background-color: black;
-	flex: 1; 
-	display: flex;
-	border-left: 1px solid gray;
-}
 .icons {
-	color: white;
+	color: rgb(231, 233, 234);
 	padding: 7px;
 	display: flex;
 	justify-content: flex-start;
@@ -67,7 +69,7 @@ body {
 	font-size: 30px;
 }
 #head {
-	color: white;
+	color: rgb(231, 233, 234);
 	display: flex;
 	flex-direction: column;
 }
@@ -77,7 +79,7 @@ body {
 }
 #ff-containter {
 	display: flex;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #2f3336;
 
 }
 .ff {
@@ -90,6 +92,7 @@ body {
 }
 
 #for-you {
+	/* color: #62676b; */
 	color: gray;
 }
 #tweets-container {
@@ -97,9 +100,9 @@ body {
 	flex-direction: column;
 }
 .tweet {
-	color: white;
+	color: rgb(231, 233, 234);
 	display: flex;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #2f3336;
 
 }
 #tweet-profile-pic {
@@ -110,20 +113,22 @@ body {
 	border-radius: 100%;
 }
 .tweet-pic {
-	margin-top: 10px;
+	margin: 10px;
+	margin-bottom: 0px;
 	max-width: 500px;
 	border-radius: 5%;
+	border: 1px solid #2f3336;
 }
 #tweet-details {
-	padding: 10px;
+	padding-top: 10px;
 }
 #user-details-container {
 	display: flex;
-	color: gray;
+	color: #6d7277;
 	padding-bottom: 5px;
 }
 .user-name{
-	 color: white;
+	 color: rgb(231, 233, 234);
 	margin-right: 5px;
 }
 .user-details {
@@ -147,4 +152,40 @@ body {
 	padding: 4px;
 	font-size: 15px;
 
+}
+#right {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	padding-top: 10px;
+}
+
+
+
+#search-input {
+	background-color: #202327;
+	color:  #4f5358;
+	border: none;
+	border-radius: 30px;
+	font-size: 15px;
+	text-align:left;
+	padding: 14px;
+	margin-left: 14px;
+	width: 270px;
+background-image: url("data:image/svg+xml,%3c!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!-- Uploaded to: SVG Repo%2c www.svgrepo.com%2c Transformed by: SVG Repo Mixer Tools --%3e %3csvg width='20px' height='20px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg id='SVGRepo_bgCarrier' stroke-width='0'/%3e%3cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'/%3e%3cg id='SVGRepo_iconCarrier'%3e%3cpath d='M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z' stroke='%236d7176' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e");
+	background-repeat:no-repeat;
+	background-position: 3% 50%;
+	outline:0;
+	text-indent: 20px;
+	margin: 10p
+}
+#search-input:focus {
+	outline:solid;
+	outline-color: #007bff;
+	outline-width: 1px;
+}
+
+#search-input:focus-within svg path {
+  fill: #007bff;
 }

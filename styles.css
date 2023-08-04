@@ -7,7 +7,6 @@
 html {
 	background-color: black;
 
-	/* background-color: white; */
 	height: 100%;
 }
 body {
@@ -15,27 +14,30 @@ body {
 	font-size: 16px;
 	color: rgb(231, 233, 234);
 	height: 100%;
+	width: 100%;
 }
-#all {
+#content {
 	display: flex;
-	justify-content: center;
-	max-width: 1200px;
-	margin :auto;
+}
+#left {
+	background-color: black;
+	width: 259px;
+
 }
 
-#left {
-	padding: 10px;
-	background-color: black;
-	flex-direction: column;
-	justify-content: space-evenly;
-	min-width: 300px;
-
+#left-bar {
+	position: fixed;
+	display: flex;
+	width: 30%;
+	justify-content: flex-end;
+	min-width: 259px;
 }
 
 #middle {
 	background-color: black;
 	border-right: 1px solid #2f3336;
 	border-left: 1px solid #2f3336;
+	width: 589px;
 }
 
 .icons {
@@ -45,17 +47,24 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 }
+
 .duos {
 	font-size: 20px;
 	padding: 10px;
 	display: flex;
 	justify-content: flex-start;
 }
+.duos-text {
+	display: block;
+
+}
+
 #tweet-button-container {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	margin-top: 10px;
 }
+
 #tweet-button {
 	cursor: pointer;
 
@@ -64,26 +73,29 @@ body {
 	color: white;
 	border-radius: 30px;
 	border: none;
-	width :250px;
+	width :92%;
 	height: 50px;
 }
+
 #logo {
 	font-size: 30px;
 }
+
 #head {
 	color: rgb(231, 233, 234);
-	display: flex;
-	flex-direction: column;
 }
+
 #home {
 	padding: 10px;
 	font-size: 20px;
 }
+
 #ff-containter {
 	display: flex;
 	border-bottom: 1px solid #2f3336;
 
 }
+
 .ff {
 	padding: 10px;
 	margin: 10px;
@@ -97,23 +109,28 @@ body {
 	/* color: #62676b; */
 	color: gray;
 }
+
 #tweets-container {
 	display: flex;
 	flex-direction: column;
 }
+
 .tweet {
 	color: rgb(231, 233, 234);
 	display: flex;
 	border-bottom: 1px solid #2f3336;
 
 }
+
 #tweet-profile-pic {
 	padding: 10px;
 }
+
 #icon-pic {
 	max-width: 40px;
 	border-radius: 100%;
 }
+
 .tweet-pic {
 	margin: 10px;
 	margin-bottom: 0px;
@@ -121,49 +138,61 @@ body {
 	border-radius: 5%;
 	border: 1px solid #2f3336;
 }
+
 #tweet-details {
 	padding-top: 10px;
 }
+
 #user-details-container {
 	display: flex;
 	color: #6d7277;
 	padding-bottom: 5px;
 }
+
 .user-name{
 	 color: rgb(231, 233, 234);
 	margin-right: 5px;
 }
+
 .user-details {
 	padding: 1px;
 }
+
 #quote {
 	font-size: 15px;
 	max-width: 500px;
 }
+
 .tweet-stats {
 	display: flex;
 	justify-content: space-between;
 }
+
 .interactions {
 	display: flex;
 	color: gray;
 	padding: 10px;
 }
+
 .sub-interaction {
 	display: flex;
 	padding: 4px;
 	font-size: 15px;
 
 }
+
 #right {
 	background-color: black;
 	display: flex;
+	/* display: none; */
 	flex-direction: column;
-	min-width: 300px;
+	width: 350px;
 	padding-top: 10px;
+	margin-left: 10px;
 }
-
-
+#Home {
+	font-weight: bold;
+}
 
 #search-input {
 	background-color: #202327;
@@ -182,6 +211,7 @@ background-image: url("data:image/svg+xml,%3c!DOCTYPE svg PUBLIC '-//W3C//DTD SV
 	text-indent: 20px;
 	margin: 10p
 }
+
 #search-input:focus {
 	outline:solid;
 	outline-color: #007bff;
@@ -190,4 +220,82 @@ background-image: url("data:image/svg+xml,%3c!DOCTYPE svg PUBLIC '-//W3C//DTD SV
 
 #search-input:focus-within svg path {
   fill: #007bff;
+}
+
+ #get-verified-container {
+	background-color: #202327;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 30px;
+}
+
+#get-verified {
+	font-size: 20px;
+	font-weight:bold ;
+}
+
+.gv-items {
+	padding: 5px;
+}
+
+#sub {
+	font-size: 15px;
+}
+
+#get-verified-button {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #1DA1F2;
+	color: white;
+	border-radius: 30px;
+	border: none;
+	width: 150px;
+	height: 35px;
+}
+
+#trends {
+ 	background-color: #202327;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	margin: 10px;
+}
+
+#trends-header {
+	font-size: 20px;
+	font-weight:bold ;
+}
+
+.trend {
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	
+}
+
+.trend-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.small-text {  
+	font-size: 13px;
+	color: gray;
+}
+
+.trend-name {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#show-more {
+	margin-top: 20px;
+ 	color: #1DA1F2;
+	font-size: 15px;
+	cursor: pointer;
 }
